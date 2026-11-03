@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -112,6 +113,8 @@ export default {
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    submittedRestockOrders: 'Submitted Restock Orders',
+    noRestockOrders: 'No restock orders have been submitted yet.',
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -125,7 +128,8 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
+      actualDelivery: 'Actual Delivery',
+      leadTime: 'Lead Time'
     }
   },
 
@@ -185,6 +189,31 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Generate budget-aware restock recommendations from demand forecasts',
+    budgetLabel: 'Restock Budget',
+    itemsRecommended: 'Items Recommended',
+    totalCost: 'Total Cost',
+    budgetRemaining: 'Budget Remaining',
+    recommendations: 'Recommended Restock Items',
+    placeOrder: 'Place Order',
+    leadTimeDays: '{days} days',
+    orderSuccess: 'Order {orderNumber} placed successfully. Lead time: {leadTime}. Expected delivery: {expectedDelivery}.',
+    orderError: 'Failed to place restock order. Please try again.',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      currentDemand: 'Current Demand',
+      forecastedDemand: 'Forecasted Demand',
+      demandGap: 'Demand Gap',
+      recommendedQty: 'Recommended Qty',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total'
     }
   },
 
