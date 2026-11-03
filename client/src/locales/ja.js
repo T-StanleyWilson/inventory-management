@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '再入荷',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -112,6 +113,8 @@ export default {
     onTimeDelivery: '定時配達',
     itemsCount: '{count}件',
     quantity: '数量',
+    submittedRestockOrders: '発注済み再入荷注文',
+    noRestockOrders: '再入荷注文はまだ送信されていません。',
     table: {
       orderNumber: '注文番号',
       orderId: '注文ID',
@@ -125,7 +128,8 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
     }
   },
 
@@ -185,6 +189,31 @@ export default {
       change: '変化',
       trend: 'トレンド',
       period: '期間'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: '再入荷',
+    description: '需要予測から予算に応じた再入荷提案を生成',
+    budgetLabel: '再入荷予算',
+    itemsRecommended: '推奨品目数',
+    totalCost: '合計コスト',
+    budgetRemaining: '残り予算',
+    recommendations: '推奨再入荷品目',
+    placeOrder: '注文する',
+    leadTimeDays: '{days}日',
+    orderSuccess: '注文{orderNumber}が正常に発注されました。リードタイム: {leadTime}。予定配達日: {expectedDelivery}。',
+    orderError: '再入荷注文の発注に失敗しました。もう一度お試しください。',
+    table: {
+      sku: 'SKU',
+      itemName: '品目名',
+      currentDemand: '現在の需要',
+      forecastedDemand: '予測需要',
+      demandGap: '需要ギャップ',
+      recommendedQty: '推奨数量',
+      unitCost: '単価',
+      lineTotal: '小計'
     }
   },
 
